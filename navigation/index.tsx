@@ -86,9 +86,17 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="TabTwo"
+        component={TabOneScreen}
+        options={{
+          title: 'Basar',
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="TabThree"
         component={TabTwoScreen}
         options={{
-          title: 'Tab Two',
+          title: 'Memis',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
